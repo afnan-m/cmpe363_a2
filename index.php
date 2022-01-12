@@ -22,19 +22,19 @@ llll
 
 
 
-    // $servername = "http://cmpe363-meca100.database.windows.net/";
-    // $username = "cmpe363";
-    // $password = "Meca1234";
-    // $dbname = "employeedb";
+    $servername = "http://cmpe363-meca100.database.windows.net/";
+    $username = "cmpe363";
+    $password = "Meca1234";
+    $dbname = "employeedb";
 
-    // // Create connection
-    // $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-    // // Check connection
-    // if (!$conn) {
-    // die("Connection failed: " . mysqli_connect_error());
-    // }
-    // echo "Connected successfully";
+    // Check connection
+    if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+    }
+    echo "Connected successfully";
 
 
     // // method anas dbo 
@@ -71,7 +71,7 @@ llll
     //     }else return FALSE;
 
 
-    // mysqli_close($conn);
+    mysqli_close($conn);
 
 
 
